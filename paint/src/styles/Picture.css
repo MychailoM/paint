@@ -1,0 +1,10 @@
+.picture{
+    border: 1px solid black;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pixel{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+}

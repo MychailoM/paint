@@ -6,12 +6,6 @@ const EditPicture = () => {
     const [columns, setColumns] = useState(5);
     const [rows, setRows] = useState(5);
 
-    const props = {
-        selectedColor: color,
-        columns: columns,
-        rows: rows,
-    }
-
     const save = () => {
 
     }
@@ -33,7 +27,7 @@ const EditPicture = () => {
                     <button onClick={() => setRows(rows - 5)}>-</button>
                 </div>
             </div>
-            <Picture props={props}/>
+            <Picture rows={rows} columns={columns} selectedColor={color} />
         </div>
     )
 }
