@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Picture from "./Picture";
+import './styles/EditPicture.css'
 
 const EditPicture = ({onSave}) => {
     const [color, setColor] = useState('#fff');
@@ -10,19 +11,21 @@ const EditPicture = ({onSave}) => {
 
 
     return(
-        <div>
-            <div>                
-                <input value={color} onChange={(e) => setColor(e.target.value)} type="color"/>
-                <div>
-                    <button onClick={()=>setColumns(columns + 5)}>+</button>
-                    <p>{columns}</p>
-                    <button onClick={()=>setColumns(columns - 5)}>-</button>
-                </div>
+        <div className="container">
+            <div className="controlsContainer"> 
+                <div className="columns">
 
-                <div>
-                    <button onClick={() => setRows(rows + 5)}>+</button>
-                    <p>{rows}</p>
-                    <button onClick={() => setRows(rows - 5)}>-</button>
+                    <button className="add" onClick={()=>setColumns(columns + 5)}>+</button>
+                    <p className="number">columns: {columns}</p>
+                    <button  className="minus" onClick={()=>setColumns(columns - 5)}>-</button>
+                </div>               
+
+                <input className="palette" value={color} onChange={(e) => setColor(e.target.value)} type="color"/>                
+
+                <div  className="rows">
+                    <button className="add" onClick={() => setRows(rows + 5)}>+</button>
+                    <p className="number">rows: {rows}</p>
+                    <button className="minus" onClick={() => setRows(rows - 5)}>-</button>
                 </div>
             </div>
             <Picture onSave={onSave}  rows={rows} columns={columns} selectedColor={color} />

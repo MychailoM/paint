@@ -1,0 +1,34 @@
+.gallery{
+    margin: 0 auto;
+    margin-top: 32px;
+    width: 80vw;
+    padding: 32px;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 6px 6px 24px black;
+}
+
+.GalleryPictureContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid rgb(83, 83, 83);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 24px black;
+}
+
+.deleteBtn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(82, 137, 255);
+    border-radius: 8px;
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    box-shadow: 6px 6px 18px #000;
+    cursor: pointer;
+}

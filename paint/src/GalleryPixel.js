@@ -1,7 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 
-const GalleryPixel = () => {
-
+const GalleryPixel = ({ color }) => {
+    return (
+        <div style={{
+            width: 15,
+            height: 15,
+            backgroundColor: color,
+            
+        }}></div>
+    );
 }
 
 export default GalleryPixel;

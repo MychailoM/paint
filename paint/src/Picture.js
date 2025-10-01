@@ -44,7 +44,7 @@ const Picture = ({ rows, columns, selectedColor, onSave }) => {
         ></div>
       ))}
     </div>    
-    <button onClick={() => onSave(picture)}>SAVE</button>
+    <button className="saveBtn" onClick={() => onSave(picture, rows, columns)}>SAVE</button>
 </>
   );
 };

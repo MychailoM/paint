@@ -8,3 +8,13 @@
 .pixel{
     border: 1px solid rgba(0, 0, 0, 0.13);
 }
+
+.saveBtn{
+    background-color: rgb(82, 137, 255);
+    border-radius: 8px;
+    border: none;
+    padding: 12px 24px;
+    color: white;
+    box-shadow: 6px 6px 12px #000;
+    cursor: pointer;
+}
